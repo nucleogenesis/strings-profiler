@@ -1,4 +1,3 @@
-from StrsProfiler import StrsProfiler
 from StringProfiler import StringProfiler
 
 if __name__ == "__main__":
