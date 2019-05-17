@@ -2,23 +2,6 @@
 
 ## WIP Notes
 
-### Goals
+Dumps CSV files containing information about $trs usage in Kolibri.
 
-- Process each 
-
-### Reporting Class
-
-#### Properties
-
-```
-{
-    file_path: {
-        $trs_key: {
-            key_use_count: <int>,
-            key_use_paths: [<path_where_used>, ...],
-            cross_component_uses_count: <int>,
-            cross_component_uses_paths: [<path_where_used>, ...]
-        }
-    }
-}
-```
+Currently, paths are hard-coded to my local machine's paths. If you want to use this, you'll need to change the `ROOT_PATH` value in `StringProfiler.py`
