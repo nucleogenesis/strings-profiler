@@ -1,5 +1,6 @@
 from StrsProfiler import StrsProfiler
+from StringProfiler import StringProfiler
 
 if __name__ == "__main__":
-    strs = StrsProfiler()
+    strs = StringProfiler()
     strs.run()
