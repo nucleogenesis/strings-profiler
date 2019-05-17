@@ -3,12 +3,16 @@ from pathlib import Path
 import re
 import csv
 
-ROOT_PATH = "/home/jacob/Code/LearningEquality/kolibri/kolibri/" # Override or require from kwargs
+# TODO: Approach this differently so that a user can run the program
+# without having to edit the ROOT_PATH in the code.
+ROOT_PATH = "/home/jacob/Code/LearningEquality/kolibri/kolibri/" 
 
 PATHS = {
     'coach':'plugins/coach/assets/src',
     'learn':'plugins/learn/assets/src',
-    'core':'core/assets/src'
+    'facility_management':'plugins/facility_management/assets/src',
+    'device_management':'plugins/device_management/assets/src',
+    'core':'core/assets/src',
 }
 
 REGEXES = {
@@ -22,8 +26,6 @@ COMMON_COACH_PATH = "/home/jacob/Code/LearningEquality/kolibri/kolibri/plugins/c
 class StringProfiler:
 
     def run(self):
-        # TODO - Handle args stuff.
-
         # 1. Get all relevant files
         for path_key in PATHS.keys():
             print("Working on {}.".format(path_key))
